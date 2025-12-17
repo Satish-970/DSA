@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class SecondSmallestInArray {
+    public static void main(String[] args) {
+        SecondSmallestInArray s = new SecondSmallestInArray();
+        int[] arr = {10, 5, 20, 8};
+
+        System.out.println(s.brute(arr));
+        System.out.println(s.optimal(arr));
+    }
+ 
+    int brute(int[] arr) {
+        Arrays.sort(arr);
+        return arr[1];
+    }
+
+    int optimal(int[] arr) {
+        int min = 0;
+        for (int i = 1; i < arr.length; i++)
+            if (arr[i] < arr[min]) min = i;
+
+        arr[min] = Integer.MAX_VALUE;
+
+        int second = 0;
+        for (int i = 1; i < arr.length; i++)
+            if (arr[i] < arr[second]) second = i;
+
+        return arr[second];
+    }
+}
