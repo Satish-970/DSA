@@ -1,0 +1,167 @@
+/* Mobile First Responsive Design */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .nav {
+    gap: 16px;
+  }
+  
+  .hero {
+    padding: 40px 16px 30px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .stats,
+  .overall-progress,
+  .topics {
+    padding: 0 16px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+  
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .topic-card {
+    padding: 20px;
+  }
+  
+  .topic-header {
+    gap: 12px;
+  }
+  
+  .topic-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+  
+  .topic-title {
+    font-size: 16px;
+  }
+  
+  .topic-description {
+    font-size: 13px;
+  }
+  
+  .topic-stats {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .difficulty-badge {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-content {
+    padding: 0 20px;
+  }
+  
+  .hero {
+    padding: 60px 20px 40px;
+  }
+  
+  .stats,
+  .overall-progress,
+  .topics {
+    padding: 0 20px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .topics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .topic-icon {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support (already implemented but ensuring compatibility) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --surface: #111111;
+    --card: #1a1a1a;
+    --text: #ffffff;
+    --text-muted: #888888;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .nav {
+    display: none;
+  }
+  
+  .hero {
+    padding: 20px 0;
+  }
+  
+  .topic-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

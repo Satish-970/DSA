@@ -1,0 +1,90 @@
+export const strings = {
+  id: "strings",
+  title: "Strings & Pattern Matching",
+  icon: "🔤",
+  description: "Master string manipulation, pattern matching algorithms, palindromes, and advanced string processing techniques.",
+  
+  theory: [
+    "String Fundamentals",
+    "ASCII & Unicode",
+    "String Hashing",
+    "KMP Algorithm",
+    "Rabin-Karp Algorithm", 
+    "Z Algorithm",
+    "Manacher's Algorithm",
+    "Suffix Arrays",
+    "Trie Applications",
+    "Regular Expressions"
+  ],
+  
+  algorithms: [
+    { name: "KMP Pattern Matching", time: "O(n+m)", space: "O(m)" },
+    { name: "Rabin-Karp", time: "O(n+m)", space: "O(1)" },
+    { name: "Z Algorithm", time: "O(n)", space: "O(n)" },
+    { name: "Manacher's Algorithm", time: "O(n)", space: "O(n)" },
+    { name: "Rolling Hash", time: "O(n)", space: "O(1)" }
+  ],
+  
+  problems: [
+    // Easy Problems
+    { title: "Valid Anagram", difficulty: "Easy", leetcode: "https://leetcode.com/problems/valid-anagram/" },
+    { title: "Valid Palindrome", difficulty: "Easy", leetcode: "https://leetcode.com/problems/valid-palindrome/" },
+    { title: "Longest Common Prefix", difficulty: "Easy", leetcode: "https://leetcode.com/problems/longest-common-prefix/" },
+    { title: "Reverse String", difficulty: "Easy", leetcode: "https://leetcode.com/problems/reverse-string/" },
+    { title: "First Unique Character in a String", difficulty: "Easy", leetcode: "https://leetcode.com/problems/first-unique-character-in-a-string/" },
+    { title: "Valid Parentheses", difficulty: "Easy", leetcode: "https://leetcode.com/problems/valid-parentheses/" },
+    { title: "Implement strStr()", difficulty: "Easy", leetcode: "https://leetcode.com/problems/implement-strstr/" },
+    { title: "Length of Last Word", difficulty: "Easy", leetcode: "https://leetcode.com/problems/length-of-last-word/" },
+    { title: "Add Binary", difficulty: "Easy", leetcode: "https://leetcode.com/problems/add-binary/" },
+    { title: "Palindrome Number", difficulty: "Easy", leetcode: "https://leetcode.com/problems/palindrome-number/" },
+    { title: "Roman to Integer", difficulty: "Easy", leetcode: "https://leetcode.com/problems/roman-to-integer/" },
+    { title: "Integer to Roman", difficulty: "Easy", leetcode: "https://leetcode.com/problems/integer-to-roman/" },
+    { title: "Count and Say", difficulty: "Easy", leetcode: "https://leetcode.com/problems/count-and-say/" },
+    { title: "Isomorphic Strings", difficulty: "Easy", leetcode: "https://leetcode.com/problems/isomorphic-strings/" },
+    { title: "Word Pattern", difficulty: "Easy", leetcode: "https://leetcode.com/problems/word-pattern/" },
+
+    // Medium Problems
+    { title: "Longest Substring Without Repeating Characters", difficulty: "Medium", leetcode: "https://leetcode.com/problems/longest-substring-without-repeating-characters/" },
+    { title: "Longest Palindromic Substring", difficulty: "Medium", leetcode: "https://leetcode.com/problems/longest-palindromic-substring/" },
+    { title: "Group Anagrams", difficulty: "Medium", leetcode: "https://leetcode.com/problems/group-anagrams/" },
+    { title: "String Compression", difficulty: "Medium", leetcode: "https://leetcode.com/problems/string-compression/" },
+    { title: "Reverse Words in a String", difficulty: "Medium", leetcode: "https://leetcode.com/problems/reverse-words-in-a-string/" },
+    { title: "Zigzag Conversion", difficulty: "Medium", leetcode: "https://leetcode.com/problems/zigzag-conversion/" },
+    { title: "String to Integer (atoi)", difficulty: "Medium", leetcode: "https://leetcode.com/problems/string-to-integer-atoi/" },
+    { title: "Generate Parentheses", difficulty: "Medium", leetcode: "https://leetcode.com/problems/generate-parentheses/" },
+    { title: "Letter Combinations of a Phone Number", difficulty: "Medium", leetcode: "https://leetcode.com/problems/letter-combinations-of-a-phone-number/" },
+    { title: "Longest Repeating Character Replacement", difficulty: "Medium", leetcode: "https://leetcode.com/problems/longest-repeating-character-replacement/" },
+    { title: "Palindromic Substrings", difficulty: "Medium", leetcode: "https://leetcode.com/problems/palindromic-substrings/" },
+    { title: "Decode String", difficulty: "Medium", leetcode: "https://leetcode.com/problems/decode-string/" },
+    { title: "Find All Anagrams in a String", difficulty: "Medium", leetcode: "https://leetcode.com/problems/find-all-anagrams-in-a-string/" },
+    { title: "Partition Labels", difficulty: "Medium", leetcode: "https://leetcode.com/problems/partition-labels/" },
+    { title: "Reorganize String", difficulty: "Medium", leetcode: "https://leetcode.com/problems/reorganize-string/" },
+    { title: "Minimum Remove to Make Valid Parentheses", difficulty: "Medium", leetcode: "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/" },
+    { title: "Longest Valid Parentheses", difficulty: "Medium", leetcode: "https://leetcode.com/problems/longest-valid-parentheses/" },
+    { title: "Compare Version Numbers", difficulty: "Medium", leetcode: "https://leetcode.com/problems/compare-version-numbers/" },
+    { title: "Restore IP Addresses", difficulty: "Medium", leetcode: "https://leetcode.com/problems/restore-ip-addresses/" },
+    { title: "Simplify Path", difficulty: "Medium", leetcode: "https://leetcode.com/problems/simplify-path/" },
+    { title: "Text Justification", difficulty: "Medium", leetcode: "https://leetcode.com/problems/text-justification/" },
+    { title: "Multiply Strings", difficulty: "Medium", leetcode: "https://leetcode.com/problems/multiply-strings/" },
+    { title: "Basic Calculator II", difficulty: "Medium", leetcode: "https://leetcode.com/problems/basic-calculator-ii/" },
+    { title: "Remove Duplicate Letters", difficulty: "Medium", leetcode: "https://leetcode.com/problems/remove-duplicate-letters/" },
+    { title: "Validate IP Address", difficulty: "Medium", leetcode: "https://leetcode.com/problems/validate-ip-address/" },
+
+    // Hard Problems
+    { title: "Minimum Window Substring", difficulty: "Hard", leetcode: "https://leetcode.com/problems/minimum-window-substring/" },
+    { title: "Edit Distance", difficulty: "Hard", leetcode: "https://leetcode.com/problems/edit-distance/" },
+    { title: "Regular Expression Matching", difficulty: "Hard", leetcode: "https://leetcode.com/problems/regular-expression-matching/" },
+    { title: "Wildcard Matching", difficulty: "Hard", leetcode: "https://leetcode.com/problems/wildcard-matching/" },
+    { title: "Substring with Concatenation of All Words", difficulty: "Hard", leetcode: "https://leetcode.com/problems/substring-with-concatenation-of-all-words/" },
+    { title: "Shortest Palindrome", difficulty: "Hard", leetcode: "https://leetcode.com/problems/shortest-palindrome/" },
+    { title: "Valid Number", difficulty: "Hard", leetcode: "https://leetcode.com/problems/valid-number/" },
+    { title: "Distinct Subsequences", difficulty: "Hard", leetcode: "https://leetcode.com/problems/distinct-subsequences/" },
+    { title: "Interleaving String", difficulty: "Hard", leetcode: "https://leetcode.com/problems/interleaving-string/" },
+    { title: "Scramble String", difficulty: "Hard", leetcode: "https://leetcode.com/problems/scramble-string/" },
+    { title: "Word Ladder", difficulty: "Hard", leetcode: "https://leetcode.com/problems/word-ladder/" },
+    { title: "Word Ladder II", difficulty: "Hard", leetcode: "https://leetcode.com/problems/word-ladder-ii/" },
+    { title: "Palindrome Pairs", difficulty: "Hard", leetcode: "https://leetcode.com/problems/palindrome-pairs/" },
+    { title: "Basic Calculator", difficulty: "Hard", leetcode: "https://leetcode.com/problems/basic-calculator/" },
+    { title: "Expression Add Operators", difficulty: "Hard", leetcode: "https://leetcode.com/problems/expression-add-operators/" }
+  ]
+};
